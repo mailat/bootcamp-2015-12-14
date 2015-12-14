@@ -1,0 +1,34 @@
+= Android Bootcamp Training
+
+14 December 2015
+
+*Marius Mailat*, +<marius.mailat@gmail.com>+
+http://thewnewcircle.com[The New Circle, Inc.]
+
+== Obtaining Course Materials
+
+You can either clone this Git repository:
+
+  git clone git://github.com/mailat/bootcamp-2015-12-14.git
+
+or
+
+   download a Zip archive by clicking the link at the top of the page or using the link:
+  
+	https://github.com/mailat/bootcamp-2015-12-14/zipball/master
+
+== Useful Links
+
+Git book: http://git-scm.com/book
+
+Marakana Java Fundamentals Tutorial: http://marakana.com/bookshelf/java_fundamentals_tutorial/index.html
+
+Introduction to Eclipse - Driving Java Productivity: http://mrkn.co/s/video_introduction_to_eclipse_driving_java_productivity,595/index.html
+
+Java Tutorial http://docs.oracle.com/javase/tutorial/
+
+== Homework Day 01
+
+- Finish the lab activity in Labs_Bootcamp_Slides.html (Page 2)
+- Have a Button which opens the Starwars cinema ticket
+- Create a second activity names SecondActivity and start the second activity from StatusActivity.
