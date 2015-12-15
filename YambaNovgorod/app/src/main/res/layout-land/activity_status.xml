@@ -16,6 +16,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:textColor="@color/colorAccent"
+        android:onClick="onClickPost"
         android:text="@string/status_button"/>
 
     <EditText
@@ -29,6 +30,7 @@
         android:layout_toLeftOf="@+id/status_button"
         android:layout_toStartOf="@+id/status_button"
         android:gravity="left|top"
+        android:maxLength="140"
         android:hint="@string/status_text_hint"/>
 
     <TextView

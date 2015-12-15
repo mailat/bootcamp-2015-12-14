@@ -13,8 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class StatusActivity extends AppCompatActivity implements
-        View.OnClickListener, TextWatcher {
+public class StatusActivity extends AppCompatActivity implements TextWatcher {
     private int mDefaultColor;
 
     private Button mPostButton;
@@ -30,7 +29,6 @@ public class StatusActivity extends AppCompatActivity implements
         mTextStatus = (EditText) findViewById(R.id.status_text);
         mTextCount = (TextView) findViewById(R.id.status_text_count);
 
-        mPostButton.setOnClickListener(this);
         mTextStatus.addTextChangedListener(this);
 
         mDefaultColor = mTextCount.getTextColors().getDefaultColor();
@@ -60,8 +58,8 @@ public class StatusActivity extends AppCompatActivity implements
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onClick(View v) {
+
+    public void onClickPost(View v) {
         Toast.makeText(this, "Click!", Toast.LENGTH_SHORT).show();
     }
 
