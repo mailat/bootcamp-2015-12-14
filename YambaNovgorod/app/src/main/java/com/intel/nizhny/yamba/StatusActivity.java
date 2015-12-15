@@ -1,5 +1,6 @@
 package com.intel.nizhny.yamba;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -58,9 +59,24 @@ public class StatusActivity extends AppCompatActivity implements TextWatcher {
         return super.onOptionsItemSelected(item);
     }
 
-
+    /**
+     * React on click on "Post"
+     * @param v
+     */
     public void onClickPost(View v) {
-        Toast.makeText(this, "Click!", Toast.LENGTH_SHORT).show();
+        //get the text we have to post on the server
+        String status = mTextStatus.getText().toString();
+
+        //show confirmation for a few ms on the screen
+        Toast.makeText(this, "Message sent: " + status, Toast.LENGTH_SHORT).show();
+
+        //call the service and pass the message
+        Intent intent = new Intent(this, StatusUpdateService.class);
+        intent.putExtra(StatusUpdateService.EXTRA_MESSAGE, status);
+        startService(intent);
+
+        //clear the UI
+        mTextStatus.getText().clear();
     }
 
     @Override
