@@ -15,6 +15,7 @@
         android:layout_alignBottom="@+id/status_text"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:textColor="@color/colorAccent"
         android:text="@string/status_button"/>
 
     <EditText
