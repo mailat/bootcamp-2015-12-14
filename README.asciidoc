@@ -13,9 +13,7 @@ You can either clone this Git repository:
 
 or
 
-   download a Zip archive by clicking the link at the top of the page or using the link:
-  
-	https://github.com/mailat/bootcamp-2015-12-14/zipball/master
+   download a Zip archive by clicking the link at the top of the page or using the link: https://github.com/mailat/bootcamp-2015-12-14/zipball/master
 
 == Useful Links
 
@@ -26,6 +24,8 @@ Marakana Java Fundamentals Tutorial: http://marakana.com/bookshelf/java_fundamen
 Introduction to Eclipse - Driving Java Productivity: http://mrkn.co/s/video_introduction_to_eclipse_driving_java_productivity,595/index.html
 
 Java Tutorial http://docs.oracle.com/javase/tutorial/
+
+Android Dev Summit coding labs 2015 - https://www.code-labs.io/android-dev-summit
 
 == Homework Day 01
 
