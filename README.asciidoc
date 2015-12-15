@@ -32,3 +32,9 @@ Android Dev Summit coding labs 2015 - https://www.code-labs.io/android-dev-summi
 - Finish the lab activity in Labs_Bootcamp_Slides.html (Page 2)
 - Have a Button which opens the Starwars cinema ticket
 - Create a second activity names SecondActivity and start the second activity from StatusActivity.
+
+== Homework Day 02
+
+- Start/Finish the lab activity in Labs_Bootcamp_Slides.html (Page 27 - preferences)
+- Create AsyncTask in StatusActivity (entry in the options menu "Manual refresh") and display the results in a TextView (optional in a ListView). Add optional a Spinner for the progress of the connection.
+- Create a broadcast receiver for the Internet Connection ON, in case we receive internet we just START the RefreshService.class

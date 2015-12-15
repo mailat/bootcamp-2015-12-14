@@ -34,7 +34,9 @@ public class StatusActivity extends AppCompatActivity implements TextWatcher {
 
         mDefaultColor = mTextCount.getTextColors().getDefaultColor();
 
-        mTextStatus.setText(null);
+        mTextStatus.setText(getIntent()
+                .getStringExtra(StatusUpdateService.EXTRA_MESSAGE));
+
     }
 
     @Override
