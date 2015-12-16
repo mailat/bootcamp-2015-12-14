@@ -25,7 +25,9 @@ Introduction to Eclipse - Driving Java Productivity: http://mrkn.co/s/video_intr
 
 Java Tutorial http://docs.oracle.com/javase/tutorial/
 
-Android Dev Summit coding labs 2015 - https://www.code-labs.io/android-dev-summit
+== What should you start after finishing the training?
+
+- Android Dev Summit coding labs 2015 - https://www.code-labs.io/android-dev-summit
 
 == Homework Day 01
 
@@ -38,3 +40,9 @@ Android Dev Summit coding labs 2015 - https://www.code-labs.io/android-dev-summi
 - Start/Finish the lab activity in Labs_Bootcamp_Slides.html (Page 27 - preferences)
 - Create AsyncTask in StatusActivity (entry in the options menu "Manual refresh") and display the results in a TextView (optional in a ListView). Add optional a Spinner for the progress of the connection.
 - Create a broadcast receiver for the Internet Connection ON, in case we receive internet we just START the RefreshService.class
+
+== Homework Day 03
+
+- Finish the lab activity in Labs_Bootcamp_Slides.html related to the Content Provider
+- Create a Dialog in Android similar with the one from the link http://goo.gl/TMydaO. Use a new class AlertDialog extending the Dialog with a custom XML layout.
+- Optional: Recreate the IntentService as a Service with a thread in it. Try to run it more than once.
