@@ -35,6 +35,8 @@ NDK Integration - http://ph0b.com/android-studio-gradle-and-ndk-integration/
 
 Gradle NDK Experimental plugin - http://de.slideshare.net/ph0b/mastering-the-ndk-with-android-studio-and-the-gradleexperimental-plugin
 
+Hackathon app from Droidcon London 2015 - https://github.com/mailat/dina12
+
 == What should you start after finishing the training?
 
 - Android Dev Summit coding labs 2015 - https://www.code-labs.io/android-dev-summit
@@ -55,6 +57,84 @@ Gradle NDK Experimental plugin - http://de.slideshare.net/ph0b/mastering-the-ndk
 
 - Finish the lab activity in Labs_Bootcamp_Slides.html related to the Content Provider
 - Create a Dialog in Android similar with the one from the link http://goo.gl/TMydaO. Use a new class AlertDialog extending the Dialog with a custom XML layout.
+
+Solution bellow:
+
+
+	public class ErrorDialog extends Dialog {
+		Button close;
+		
+		public ErrorDialog(Context context, String message) {
+			super(context, R.style.FullHeightDialog);
+			this.setContentView(R.layout.inf_confirmation_type_2);
+	    	
+	    	TextView errorTitle = (TextView) this.findViewById(R.id.success_title);
+	    	errorTitle.setText( context.getResources( ).getText(R.string.error_title).toString( ) );
+	    	
+	    	TextView confirmYes = (TextView) this.findViewById(R.id.success_message);
+	    	confirmYes.setText( message );
+	    	
+	    	close = (Button) this.findViewById(R.id.confirm_close);
+	    	close.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v) {
+		    		ErrorDialog.this.dismiss( );
+				}
+			});
+		}	
+
+the content of the inf_confirmation_type_2.xml will be in this case:
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content" 
+		android:layout_height="270dip"
+	 	android:orientation="vertical"
+		android:background="?background">
+
+		<FrameLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:padding="10sp">
+			
+			<ImageView android:src="?menu_aboutus_small"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:scaleType="fitXY" />
+			<TextView android:id="@+id/success_title" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:textColor="?font_color"
+				android:textSize="17sp" 
+				android:layout_gravity="center"
+				android:gravity="center" 
+				android:text="@string/success_title" />
+		</FrameLayout>		
+				
+		<TextView android:id="@+id/success_message"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:textColor="?font_color"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:layout_weight="0.7"
+			android:layout_marginBottom="10dip" />
+		
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_marginBottom="10sp"
+			android:padding="10sp">
+			
+			<Button android:id="@+id/confirm_close"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:text="@string/confirmation_CloseButtonText"
+				android:textColor="?font_color" 
+				android:textStyle="bold" 					
+				android:background="@drawable/custom_button"		
+				android:padding="10sp" />
+		</LinearLayout>		
+	 
+	</LinearLayout>
+
 - Optional: Recreate the IntentService as a Service with a thread in it. Try to run it more than once.
 
 == Homework Day 04
@@ -62,7 +142,7 @@ Gradle NDK Experimental plugin - http://de.slideshare.net/ph0b/mastering-the-ndk
 - Open the courseware_ndk/NewCircle_Android_Internals_Slides.html slides, press G and jump at the page 77. Follow the instruction to create the Android Studio project until the page 84.
 - Additionaly to the please add the following elements too:
 
-1. Make sure the JAVA_HOME, NDROID_HOME, ANDROID_NDK, GRADLE_HOME are setup correctly on your Enviroment Variables (Windows - Control panel; Mac - ~/.bash_profile )
+1. Make sure the JAVA_HOME, ANDROID_HOME, ANDROID_NDK, GRADLE_HOME are setup correctly on your Enviroment Variables (Windows - Control panel; Mac - ~/.bash_profile )
 2. /local.properties should contain your paths to SDK/NDK similar to:
 
 	ndk.dir=/Users/mailat/Work/sdk/ndk-bundle
