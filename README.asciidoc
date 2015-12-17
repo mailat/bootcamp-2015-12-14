@@ -84,7 +84,7 @@ Gradle NDK Experimental plugin - http://de.slideshare.net/ph0b/mastering-the-ndk
 
 6. In the /app/build.gradle you should have something similar to:
 
-apply plugin: 'com.android.application'
+	apply plugin: 'com.android.application'
 
 	android {
 	    compileSdkVersion 23
