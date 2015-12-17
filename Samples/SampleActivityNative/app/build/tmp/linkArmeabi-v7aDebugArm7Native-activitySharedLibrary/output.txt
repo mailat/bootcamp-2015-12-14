@@ -1,0 +1,4 @@
+See file:///Users/mailat/Work/Git/Courses/bootcamp-2015-12-14/Samples/SampleActivityNative/app/build/tmp/linkArmeabi-v7aDebugArm7Native-activitySharedLibrary/output.txt for all output for linkArmeabi-v7aDebugArm7Native-activitySharedLibrary.
+linking libnative-activity.so successful.
+
+Finished linkArmeabi-v7aDebugArm7Native-activitySharedLibrary, see full log file:///Users/mailat/Work/Git/Courses/bootcamp-2015-12-14/Samples/SampleActivityNative/app/build/tmp/linkArmeabi-v7aDebugArm7Native-activitySharedLibrary/output.txt.

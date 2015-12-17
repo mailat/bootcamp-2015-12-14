@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/mailat/Work/Git/Courses/bootcamp-2015-12-14/Samples/SampleActivityNative/app/build/intermediates/res/merged/arm7/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 51,
+                    "endOffset": 102
+                },
+                "from": {
+                    "file": "/Users/mailat/Work/Git/Courses/bootcamp-2015-12-14/Samples/SampleActivityNative/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 51,
+                        "endOffset": 102
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/mailat/Work/Git/Courses/bootcamp-2015-12-14/Samples/SampleActivityNative/app/src/androidTest/assets"/></dataSet><dataSet config="arm7"><source path="/Users/mailat/Work/Git/Courses/bootcamp-2015-12-14/Samples/SampleActivityNative/app/src/androidTestArm7/assets"/></dataSet></merger>
