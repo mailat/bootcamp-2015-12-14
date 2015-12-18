@@ -37,6 +37,8 @@ Gradle NDK Experimental plugin - http://de.slideshare.net/ph0b/mastering-the-ndk
 
 Hackathon app from Droidcon London 2015 - https://github.com/mailat/dina12
 
+Classy Shark - https://github.com/google/android-classyshark
+
 == What should you start after finishing the training?
 
 - Android Dev Summit coding labs 2015 - https://www.code-labs.io/android-dev-summit
@@ -140,3 +142,7 @@ the content of the inf_confirmation_type_2.xml will be in this case:
 == Homework Day 04
 
 - Convert the example to use the Experimental Gradle plugin as described on http://tools.android.com/tech-docs/new-build-system/gradle-experimental
+
+== Homework Day 05
+
+- Complete the 2hr Testing Coding Lab from Android Dev Summit - https://goo.gl/NWYvcx To understand how to write unit tests for Android using JUnit4, Espresso and the Android Testing Support Library and generating Code Coverage reports
