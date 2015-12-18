@@ -53,6 +53,10 @@
             android:name=".RefreshService"
             android:exported="false" />
 
+        <service
+            android:name=".UpdaterService"
+            android:exported="false" />
+
         <provider
             android:name=".StatusProvider"
             android:authorities="com.example.android.yamba.StatusProvider"
