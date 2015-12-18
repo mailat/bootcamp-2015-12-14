@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.intel.nizhny.yamba.StatusActivity">
+    tools:context="com.example.android.yamba.StatusActivity">
 
     <Button
         android:id="@+id/status_button"
@@ -15,8 +15,6 @@
         android:layout_alignBottom="@+id/status_text"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:textColor="@color/colorAccent"
-        android:onClick="onClickPost"
         android:text="@string/status_button"/>
 
     <EditText
@@ -30,7 +28,6 @@
         android:layout_toLeftOf="@+id/status_button"
         android:layout_toStartOf="@+id/status_button"
         android:gravity="left|top"
-        android:maxLength="140"
         android:hint="@string/status_text_hint"/>
 
     <TextView
