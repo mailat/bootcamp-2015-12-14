@@ -36,8 +36,11 @@ NDK Integration - http://ph0b.com/android-studio-gradle-and-ndk-integration/
 Gradle NDK Experimental plugin - http://de.slideshare.net/ph0b/mastering-the-ndk-with-android-studio-and-the-gradleexperimental-plugin
 
 Hackathon app from Droidcon London 2015 - https://github.com/mailat/dina12
+Marius presentation for the dina12 project - http://de.slideshare.net/fastlink2/having-fun-at-a-coding-with-android-wear-firebase-nfc-and-android-auto
 
 Classy Shark - https://github.com/google/android-classyshark
+
+Marius presentation on how to secure an Android app + decompiling - http://de.slideshare.net/fastlink2/20140917-curious-mindshowsecureareyourlocalapps
 
 == What should you start after finishing the training?
 
